@@ -62,7 +62,6 @@ struct epoll_event {
 	__u32 events;
 	__u64 data;
 } EPOLL_PACKED;
-
 #ifdef CONFIG_PM_SLEEP
 static inline void ep_take_care_of_epollwakeup(struct epoll_event *epev)
 {
